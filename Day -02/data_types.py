@@ -8,3 +8,10 @@ print(type(a))
 print(70 + float("100.5"))
 
 print(str(43)+str(78))
+
+num = input("Type a two digit number : ")
+
+num1 = int(num[0])
+num2 = int(num[1])
+result = num1+num2
+print(result)
