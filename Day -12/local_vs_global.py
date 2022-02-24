@@ -54,3 +54,11 @@ def increase_enemies():
 
 enemies = increase_enemies()
 print(f"enemies outside function: {enemies}") #prints 2
+
+#Global Constants
+
+PI = 3.14159
+URL = "https://www.google.com"
+TWITTER_HANDLE = "@yu_angela"
+
+#Global constants shoulb be written in upperCase for fast finding
