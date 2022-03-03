@@ -1,19 +1,24 @@
-from turtle import Turtle,Screen
+import turtle as t
 import random
-turtle = Turtle()
+turtle = t.Turtle()
+t.colormode(255)
 
 list = [0,90,180,270]
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
-# def choose_dir():
-#     for _ in range(50):
-#         return random.choice(list)
+
+def random_color():
+    r = random.randint(0,255)
+    g = random.randint(0,255)
+    b = random.randint(0,255)
+    random_ = (r, g, b)
+    return random_
 turtle.pensize(10)
 turtle.speed(9)
 
 for _ in range(100):
-    turtle.color(random.choice(colours))
+    turtle.color(random_color())
     turtle.forward(30)
     turtle.setheading(random.choice(list))
 
-screen = Screen()
+screen = t.Screen()
 screen.exitonclick()
