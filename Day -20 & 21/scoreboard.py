@@ -10,7 +10,7 @@ class Scoreboard(Turtle):
         self.write(f"Score: {self.score}", align='center', font=('Courier', 20, 'normal'))
         self.hideturtle()
 
-    def hitwall(self):
+    def game_over(self):
         self.goto(0,0)
         self.write("GAME OVER", move=False, align='center', font=('Courier', 20, 'normal'))
 
